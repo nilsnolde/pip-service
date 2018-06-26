@@ -10,3 +10,6 @@ jobs:
       - run:
           name: Build and push image to Docker Hub
           command: sh .circleci/docker.sh
+      - run:
+          name: Build and push image with bundled WOF data to Docker Hub
+          command: sh .circleci/docker_wof_bundled.sh
